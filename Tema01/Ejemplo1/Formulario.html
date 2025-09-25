@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="estilodatos">
+   <form>
+        <h2><label for="mdatos">Mis datos:</label></h2>
+        <ol>
+        <li>Nombre:<input type="text" id="mdatos" name="mdatos" placeholder="Escriba su nombre"></li><br>
+        <li>Correo electronico:<input type="text" id="mdatos" name="mdatos" placeholder="ejemplo@dominio.com"></li><br>
+        <li>Teléfono:<input type="text" id="mdatos" name="mdatos" placeholder="ej. +34984530203"></li><br>
+         </ol>
+        </div>
+   </form> <br> <br>
+
+   <form>
+    <div class="estilopago"><h2><label for="mpago">Forma de pago:</label></h2>
+      <ol>
+       <div class="estilotarjetas">
+        <li>Tarjetas de Crédito:</li><br>
+         <ul>
+            <li><input type="checkbox" id="elem1" name="elem1" value="VISA">
+            <label for="elem1">VISA</label></li>
+            <li><input type="checkbox" id="elem1" name="elem1" value="American Express">
+            <label for="elem1">American Express</label></li>
+            <li><input type="checkbox" id="elem1" name="elem1" value="Master Card">
+            <label for="elem1">Master Card</label></li> <br>
+         </ul>
+       </div><br>
+        <li>Número de tarjeta:<input type="text" id="mdatos" name="mdatos" placeholder="Número tarjeta"></li><br>
+        <li>Código de seguridad:<input type="text" id="mdatos" name="mdatos" placeholder="Código seguridad"></li><br>
+        <li>Nombre tarjeta:<input type="text" id="mdatos" name="mdatos" placeholder="Nombre de tarjeta"></li>
+      </ol>
+   </form> 
+    </div>
+   <br>
+
+   <div class="estilocomprar"> <br>
+      <button type="button" onclick="redirigir()">comprar</button>
+     
+      <script>
+      function redirigir() 
+      {alert("Vas a ser redirigido al Index"); 
+      window.location.href="index.html";}
+      </script>      
+   </div> 
+</body>
+</html>
